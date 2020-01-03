@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script type="text/javascript" src="main2.js"></script>
+    <meta charset="utf-8">
+    <title>explore espana</title>
+  </head>
+  <div class="headerimg">
+    <img class="sunset" src="photos/Madrid-Sunset-Panorama.jpg">
+    <img src="photos/spainsunset5.jpg">
+    <img src="photos/spanishsunset3.jpg">
+    <img src="photos/spanishsunset4.jpg">
+  </div>
+<h1>Getting Started</h1>
+<br></br>
+<h2 class="overview">Overview</h2>
+  <p> It would be ideal to travel to Spain, but since we have a grand total of zero frequent flyer miles we've done the next closest thing. A student will be selected to use the VR simulation as they go through the "scavenger hunt", which
+  will be projected on the TV for the class to see. After completing the following steps and questions, the class must guess where they are to get a prize.
+ The Teacher/Administrator of the course will read the steps one at a time to the whole class. Once the step is read, click the question and it will either require another student to participate or show the answer to the question that is directed at the User. The goal for the user is to get to the end destination as fast as possible. The time it took for the User to comlete the course will translate into a point total on the last page of the site.
+For the rest of the class, the goal is to get as many points as possible throughout the course by doing the prompts on the cards accurately. If they fail to complete the task, or hesitate for longer than five seconds while talking to the user --if they are having a conversation-- they cannot receive points for that task.
+(point opprotunites will be printed on the card). In essence, the User wants to gets through the course as fast as possible and the rest of the class wants to slow them down, to get the most points. If ANY student involved in the simulation speaks English, it will disqualify the class from recieving the prize. You'll need to keep a running time of the whole game, as well as timing each interaction with each student. Buena suerte. </p>
+<br></br>
+<div class="note">
+  <p>Quick note: </p>
+  <p> It might be useful to check out the Help page before starting.</p>
+<a href="file:///Users/petergleason/desktop/CIC/explore/index3.html"
+<div class="topage3">
+  <img class="helpPicture" src="photos/helpgif.gif">
+<div>
+</a>
+</div>
+<!-- </div> -->
+<h2>Vamos a Empezar!</h2>
+
+<ul id="myUL">
+  <li class="first">Va a la iglesia. ¿Quién puede ir allí?</li>
+
+  <li class="second">Camina en esta calle. Tienes hambre y necesitas comprar comida para tu casa. ¿Dónde debes ir?</li>
+
+  <li class="third">Va al supermercado... ¿Puedes entrar, porqué?</li>
+
+  <!-- make into two cards maybe? ur gonna need more cards... -->
+
+  <li class="fourth" onclick="cardOne();">Tienes hambre todavía. Va al resturante al lado de opuesto del mercado. </li>
+
+  <li class="fifth">En esta calle, continua en la misma dirreción. En la próxima esquina, dobla a la derecha. </li>
+
+  <li class="sixth" onclick="cardTwo();">En esta calle, coge cualquier tienda que tú prefieres y compra un regalo.</li>
+
+  <li class="seventh">Camina a la tienda "Raymon Optica". ¿Qué tipo de persona tiene que comprar algo aqui?
+  <!-- <img class="coatofarms" id="coatofarms1" src="photos/coatofarmscropped1.png"></li> -->
+
+  <li class="eight" onclick="cardThree();">En la calle principal, camina a la derecha de "Raymon Optica". Ve al letrero a la izquierda.</li>
+  <!-- try doing an empty div or image.hide, so you set the function to put the img into the empty div -->
+<!-- <img class="coatofarms" src="photos/croppedcoatofarms2.png"> -->
+  <li class="ninth" onclick="cardFour();">Has decidido abrir tu propia empresa. ¿Ve al numero de teléfono a la ventana? <input type="button" value="PLAY"  onclick="play()">
+  <audio id="audioPhone" src="photos/PhoneRing.mp3" ></audio> </li>
+
+  <!-- <img class="coatofarms" src="photos/croppedatofarms3.png"> -->
+  <li class="tenth" onclick="cardFive();">Negocia con el dueño por un precio bajo. </li>
+  <!-- <img class="coatofarms" src="photos/croppedcoatofarms4.png"> -->
+  <li class="eleventh" onclick="atm();">Continua en la calle principal. Has pagado mucho dinero y necesitas más. Ve al lugar puedes obtener más.</li>
+  <!-- <img class="coatofarms" src="photos/croppedcoatofarms5.png"> -->
+  <li class="twelth" onclick="churchQuestion();">Encontra un lugar de rezar.</li>
+  <!-- <img class="coatofarms" src="photos/croppedcoatofarms6.png"> -->
+  <li class="thirteenth" onclick="cardSeven();">Camina a la rotonda.</li>
+
+  <li class="fourteenth" onclick="cardEight();">A la rotonda, entra un coche. Estás iedno, (lo has adivinado), una otra iglesia. Di a el automovilista que quieres ir a la iglesia primera.</li>
+
+  <li class="fifteenth" onclick="cardNine();">¿Clase, Queremos un desafío? --La respuesta debe sí...</li>
+
+  <li class="sixteenth" onclick="Stadium();">Escoge entrada A.</li>
+
+  <li class="seventeenth">Entra</li>
+
+  <li class="eighteenth">¿Qué ciudad estás? </li>
+</ul>
+
+<div class="end"
+<p>FIN</p>
+</div>
+<a href="file:///Users/petergleason/desktop/CIC/explore/index4.html"
+<div class="topage4">
+<img src="photos/arrowgifwhite.gif">
+</div>
+</a>
+
+<script>
+var sectionArms = document.querySelector('.coatofarms');
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked')
+    sectionArms.style.display==="block"
+    // .coatofarms.style.display==="block";
+  }
+}, false);
+</script>
