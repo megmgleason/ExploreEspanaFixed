@@ -1,0 +1,50 @@
+body{
+  padding:15px;
+}
+
+p{
+  font-family: 'Amatic SC', cursive;
+font-family: 'Cinzel', serif;
+font-size: 30px;
+}
+
+.rainbowtext{
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.congratsMessage{
+  padding-left: 350px;
+  display: flex;
+  justify-content: center;
+  height:auto;
+  width: 800px;
+}
+
+img{
+  height: auto;
+  width: 300px;
+}
+.photoBanner{
+  width:auto;
+  display: flex;
+  justify-content: space-around;
+  justify-content:space-between;
+  justify-content: center;
+
+}
+
+img{
+  padding-right: 30px;
+  height: 200px;
+  width: 300px;
+}
+
+.secondBanner{
+  padding-top: 15px;
+  display: flex;
+  justify-content:space-around;
+  justify-content: space-between;
+  justify-content: center;
+}

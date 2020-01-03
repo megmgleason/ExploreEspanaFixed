@@ -1,0 +1,173 @@
+body{
+  padding:30px;
+  padding-bottom: 30px;
+}
+
+.headerimg{
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+img{
+  height:auto;
+  width:200px;
+}
+
+.helpPicture{
+  height: auto;
+  width:150px;
+}
+ .note{
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: center;
+   /* width:600px; */
+}
+.topage3{
+  display: flex;
+  justify-content: flex-end;
+}
+h1{
+  font-family: 'Amatic SC', cursive;
+  display:flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.overview{
+  display: flex;
+  justify-content: flex-start;
+}
+h2{
+font-family: 'Cinzel', serif;
+font-weight: bold;
+display:flex;
+justify-content: center;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+li{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  font-size: 18px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+  /* .coatofarms.hide */
+}
+
+.coatofarms{
+  display: flex;
+  display: none;
+}
+
+.end{
+  display:flex;
+  justify-content: flex-end;
+  padding-right: 160px;
+  font-family: 'Amatic SC', cursive;
+font-family: 'Cinzel', serif;
+font-size: 30px;
+}
+
+.first.checked{
+  background: #A62929
+}
+.second.checked{
+  background: #A62929
+}
+.third.checked{
+  background: #A62929
+}
+.fourth.checked{
+  background: #A62929
+}
+.fifth.checked{
+  background: #EECC00
+}
+.sixth.checked{
+  background: #EECC00
+}
+.seventh.checked{
+  background: #EECC00
+  /* .coatofarms1.show this messed it up watch out */
+  /* #coatofarms1 display: show; */
+}
+.eight.checked{
+  background: #EECC00
+}
+.ninth.checked{
+  background: #EECC00
+}
+.tenth.checked{
+  background: #EECC00
+}
+.eleventh.checked{
+  background: #EECC00
+}
+.twelth.checked{
+  background: #EECC00
+}
+.thirteenth.checked{
+  background: #EECC00
+}
+.fourteenth.checked{
+  background: #EECC00
+}
+.fifteenth.checked{
+  background: #A62929
+}
+.sixteenth.checked{
+  background: #A62929
+}
+.seventeenth.checked{
+  background: #A62929
+}
+.eighteenth.checked{
+  background: #A62929
+}
+
+.topage4{
+  display: flex;
+  justify-content: flex-end;
+}
